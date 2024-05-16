@@ -1,0 +1,170 @@
+/* enables image size to change with the page . */
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+/*display-tags*/
+/*.puppy{
+    display: inline-block;
+}
+.missing-puppy{
+    display: inline-block;
+}
+.puppy-2{
+    display: inline-block;
+}*/
+
+
+/* display*/
+
+.puppies-section {
+    display: flex
+}
+
+.puppy-wrapper {
+    display: flex;
+}
+
+/* -------------- */
+
+.fixed-container {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* position-tags */
+.puppy-1,
+.missing-puppy,
+.puppy-2 {
+    width: 33%;
+}
+
+.puppy-1 img,
+.missing-puppy img,
+.puppy-2 img {
+    width: 100;
+    height: auto;
+}
+
+/*-------------*/
+.bluebg {
+    background-color: #085070;
+}
+
+/* margin & padding -width */
+
+
+.banner img {
+    width: 100%;
+}
+
+.banner {
+    margin-bottom: 84px;
+}
+
+.myheader {
+    padding-top: 27px;
+    padding-bottom: 24px;
+    color: white;
+    text-align: center;
+}
+
+footer{
+    margin-top: 75px;
+    padding-top: 100px;
+    padding-bottom: 125px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.missing-puppy {
+    background-color: #f04d65;
+    margin: 0 1%;
+    border-top: 15px solid violet;
+    background-image: url(images/puppy-1.jpg) ;
+
+}
+
+
+
+.missing-wrapper {
+    font-size: 44px;
+    padding: 33px 50px px;
+    text-align: center;
+
+}
+/* section of more puppies */
+.additional-puppies {
+    margin-top: 50px;
+}
+
+.additional-puppies h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+/* --------------*/
+
+/* contains specifically images of more puppies */
+.vertical-puppy1 {
+    margin-right: 20px;
+}
+
+.vertical-puppy2 {
+    margin-left: 20px;
+}
+
+
+/* get the font link from google to link it*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

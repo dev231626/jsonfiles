@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: black;
+    padding: 10px;
+}
+
+header a{
+    color: #fff;
+    text-decoration: 10px;
+}
+
+.container{
+    width: 980px;
+    margin:0
+     auto;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
+  header ul li img{
+    width: 18px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

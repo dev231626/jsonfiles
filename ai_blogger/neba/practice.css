@@ -1,0 +1,101 @@
+img {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.bannner {
+    margin-bottom: 84px;
+}
+
+.bluebg {
+    background-color: #085070;
+}
+
+.puppies-section {
+    display: flex;
+}
+
+.puppy-wrapper {
+    display: flex;
+}
+
+.myheader {
+    padding-top: 27px;
+    padding-bottom: 24px;
+    color: white;
+    text-align: center;
+
+}
+
+footer {
+    margin-top: 75px;
+    padding-top: 100px;
+    padding-bottom: 125px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.puppy-1 .missing-puppy .puppy-2 {
+    width: 33%;
+}
+
+
+.puppy-1 img .missing-puppy img .puppy-2 img {
+    width: 100px;
+    height: auto;
+}
+
+
+.missing-puppy{
+    background-color: #f04d65;
+    margin: 0 1%;
+    background-image: url(images/puppy-1.jpg);
+
+}
+.missing-wrapper{
+    padding: 33px 50px px;
+    font-size: 44px;
+    text-align: center;
+}
+
+.additional-puppies{
+    margin-top: 50px;
+}
+
+.additional-puppies h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+.fixed-container{
+    width: 760px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.vertical-puppy1{
+    margin-right: 20px;
+}
+.vetical-puppy2{
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
