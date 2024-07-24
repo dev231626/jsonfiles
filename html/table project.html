@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 600px;
+            text-align: left;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table, td, th{
+            border: 1px solid #aaa;
+            border-collapse: collapse;
+            padding: 8px;
+            line-height: 1.3;
+        }
+        .label{
+            font-weight: 600px;
+        }
+        th{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body style="background-color: f2f6ff;">
+    <table>
+        <tr>
+            <th colspan="3">invoice #12345ABC</th>
+            <th>18 jul 2019</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <span class="label">payto:</span> <br>
+            the tech park <br>
+            123 willow street <br>
+            Boulevard, LA - 567982 
+            </td>
+            <td colspan="2">
+             <span class="label" >customer</span> <br>
+            john lark <br>
+            dummy apartments <br>
+            276 main street <br>
+            boulevard, LA - 567892 
+            </td>
+        </tr> 
+        <tr>
+            <th>
+             <span> name/description</span> 
+            </th>
+            <th>QTY</th>
+            <th>MRP</th>
+            <th>Amount</th>
+        </tr>
+        <tr> 
+            <td>Birayni</td>
+            <td>3</td>
+            <td>400</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>chocolate shake</td>
+            <td>3</td>
+            <td>400</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <th colspan="3">
+                <b>subtotal</b>
+                
+            </th>
+            <td>1800</td>
+        </tr>
+        <tr>
+            <th colspan="2"><strong>tax</strong>
+            
+            </th>
+
+            <td>10%</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <th colspan="3">
+            <strong>
+                grand total:
+            </strong>
+        </th>
+            <td>RS 1620</td>
+        </tr>
+    </table>
+</body>
+</html>

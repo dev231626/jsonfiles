@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+       header{
+    background-color:darkblue;
+    padding: 24px;
+    padding-bottom: 2px;
+    height: 50px;
+
+}
+ul, li,  .link:hover{
+    opacity: 1;
+    
+}
+ul, li,  .link{
+    color: white;
+    display: flex;
+    /* i dont understand this */
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    /*  i dont understand this */
+    justify-content: center;
+    
+}
+
+a, .link{
+    
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-left: 6px;
+    padding-right: 7px;
+    text-decoration: none;
+    font-size: large;
+    opacity: 0.8;
+    
+}
+a{
+position: relative;
+right: -240px;
+}
+        div{
+            width: 100%;
+            height: 660px;
+            padding-bottom: 400px;
+        }
+        header{
+            position: absolute;
+            z-index: 10;
+            padding-right: 1899px;
+        }
+        img{
+           position: relative;
+           top: 76px;
+           left: 0;
+        }
+ 
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="header-wrapper">
+
+            <ul>
+                <li><a class="link" href="travel.html" id="home">H</a></li>
+                <li><a class="link" id="trip" href="trip.html">
+                        Trip
+                    </a></li>
+                <li> <a class="link" id="about"  href="about.html">about </a> </li>
+                <li> <a class="link" id="contact" href="contact.html">contact </a> </li>
+            </ul>
+        </div>
+
+    </header>
+    <div style="background-color: lightblue; ">
+        <div class="image-wrapper">
+            <img class="image-item" src="../final-html-project/image/geneva.jfif" alt="">
+        </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- 1.position static -->
+<!-- default postion value for html -->
+<!-- positions elements according to normal order  of webpage -->
+
+<!-- 2. position relative  -->
+<!-- positions html elements relative to their normal position -->
+<!-- provides access to top, right, bottom and left properties -->
+
+
+
+
+<!-- 3. position absolute  -->
+
+<!-- positions elements relative to their parent element  -->
+<!-- the parent element needs to have position other than static or else the absolute element will be positioned relative to main html element  -->

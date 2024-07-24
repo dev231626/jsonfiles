@@ -1,0 +1,64 @@
+.this{
+    color: blueviolet;
+    font-size: 22;
+}
+
+
+.mytable{
+    border: 6px;
+    padding: auto;
+    margin: auto;
+}
+a{
+    background-color: #456;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+}
+
+
+a:hover{
+    background-color: red;
+
+}
+
+
+.active{
+    background-color: lightblue;
+}
+
+
+.thisis{
+    color: #456;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+table{
+    width: 50%;    margin-left: 20%;
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

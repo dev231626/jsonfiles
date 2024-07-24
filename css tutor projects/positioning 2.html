@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning 2</title>
+    <style>
+        img{
+            position: sticky;
+            padding-top:  460px; ;
+            bottom: 116px;
+            
+        }
+        body{
+            margin: 0;
+            height: 3000px;
+        }
+       header{
+    background-color:darkblue;
+    padding: 24px;
+    padding-bottom: 2px;
+    height: 50px;
+    right: 0;
+    left: 0;
+     position: fixed;
+     z-index: 10;
+}
+ul, li,  .link:hover{
+    opacity: 1;
+}
+ul, li,  .link{
+    color: white;
+    display: flex;
+    /* i dont understand this */
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    /*  i dont understand this */
+    justify-content: center;
+    
+}
+
+a, .link{
+    
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-left: 6px;
+    padding-right: 7px;
+    text-decoration: none;
+    font-size: large;
+    opacity: 0.8;
+    
+}
+a{
+position: relative;
+right: -40px;
+}
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="header-wrapper">
+
+            <ul>
+                <li><a class="link" href="travel.html" id="home">H</a></li>
+                <li><a class="link" id="trip" href="trip.html">
+                        Trip
+                    </a></li>
+                <li> <a class="link" id="about"  href="about.html">about </a> </li>
+                <li> <a class="link" id="contact" href="contact.html">contact </a> </li>
+            </ul>
+        </div>
+
+    </header>
+<div>
+   <img src="../final-html-project/image/banner.jfif" alt="">
+</div>
+
+
+
+</body>
+</html>
+
+<!-- number 1 position fixed -->
+<!-- we can make the position of element or div to be fixed when scrolling specially for heading -->
+<!-- to make the heading fixed and other elements to pass through as an overlay we use position fixed and z-index joined  -->
+<!--position: fixed;
+    right: 0;
+    left: 0;  -->
+
+
+<!-- position  -->
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about me</title>
+    <style>
+        body{
+    margin: 0;
+    background-color: #f2f6ff;
+}
+/* header */
+header{
+    background-color:darkblue;
+    padding: 24px;
+
+}
+ul, li,  .link:hover{
+    opacity: 1;
+    
+}
+ul, li,  .link{
+    color: white;
+    display: flex;
+    /* i dont understand this */
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    /*  i dont understand this */
+    justify-content: center;
+    
+}
+
+#trip:hover{
+    background-color: red;
+}
+#about:hover{
+    background-color: violet;
+
+}
+#contact:hover{
+    background-color: brown;
+}
+#home:hover{
+    background-color: aqua;
+}
+a, .link{
+    
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-left: 6px;
+    padding-right: 7px;
+    text-decoration: none;
+    font-size: large;
+    opacity: 0.8;
+    
+}
+
+.header-wrapper{
+    font-weight: 100;
+    justify-content: center;
+}
+/* list style */
+#ol{
+    list-style-type:upper-roman ;
+    list-style-position: inside;
+}
+
+#ul{
+    list-style-type: square;
+    list-style-type: none;
+}
+/* list style */
+/* link style */
+#ul1{
+    display: flex;
+}
+.a1{
+font-size: 24px;
+ margin-right: 24px;
+ color: black;
+ text-decoration: none;
+}
+/* styling state links */
+.a1:link{
+    color: blue;
+
+}
+.a1:visited{
+    color: green;
+}
+.a1:hover{
+    color: red;
+}
+.a1:active{
+    color: purple;
+}
+/* styling state links */
+
+/* list style */
+/* next css on trip.html button styling */
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="header-wrapper">
+
+            <ul>
+                <li><a class="link" href="travel.html" id="home">H</a></li>
+                <li><a id="trip" class="link" href="trip.html">
+                        Trip
+                    </a></li>
+                <li> <a id="about" class="link" href="about.html">about </a> </li>
+                <li> <a id="contact" class="link" href="contact.html">contact </a> </li>
+            </ul>
+        </div>
+    </header>
+    <form action="" style="border: 1px solid #ccc; width: 600px; margin-top: 33px; margin-left: auto; margin-right: auto;">    
+    <h1 style="text-align: center; " >
+        know me better
+    </h1>
+
+    <p style="text-align: center; font-size: 34px; "> 
+        hi, my name is nebyu dawit born in Ethiopia, arbaminch town <br>
+        so i was passionated about traveling and searching for beauty on earth so i found this incredible country called <br>switzer-land <br>
+        if you want to know about my trip and what i saw on the way please click the next text <br> 
+        <a href="trip.html" style="font-size: 34px; "> my-trip</a> 
+    </p>
+</form>
+<h1>planet of the solar system</h1>
+<ol id="ol">
+    <li>mercury</li>
+    <li>venus</li>
+    <li>mars</li>
+    <li>jupyter</li>
+    <li>saturn</li>
+    <li>uranus</li>
+    <li>neptun</li>
+    <li>pluto</li>
+</ol>
+<ul id="ul">
+    <li>mercury</li>
+    <li>venus</li>
+    <li>mars</li>
+    <li>jupyter</li>
+    <li>saturn</li>
+    <li>uranus</li>
+    <li>neptun</li>
+    <li>pluto</li>
+</ul>
+<ul id="ul1">
+    <li><a class="a1" href="">neba</a></li>
+    <li><a class="a1" href="">link</a></li>
+    <li class="li1"></li>
+</ul>
+</body>
+</html>

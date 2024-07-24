@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table{
+            width: 700px;
+            background-color: lightblue;
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+        table, td, th {
+          border: 1px solid black;
+          border-collapse: collapse;
+          font-size: 24px;
+        }
+        td, th{
+            padding: 16px;
+        }
+    </style>
+
+</head>
+<body>
+   <form>
+    <input list="technologies" name="tech">
+    <datalist id="technologies" >
+        <option value="html"></option>
+        <option value="css"></option>
+        <option value="javascript"></option>
+        <option value="c++"></option>
+        <option value="python"></option>
+        <option value="react"></option>
+        <option value="sql"></option>
+        <option value="angular"></option>
+    </datalist>
+   </form>
+
+</body>
+</html>

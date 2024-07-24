@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #grid{
+        background-color: green;
+        display: grid;
+        padding: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        grid-template-columns: 200px 200px auto;
+     }
+        .grid-items{
+            background-color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        #form{
+            width: 300px;
+            background-color: white;
+            margin-left: auto;       
+            margin-right: auto;         
+            padding: 24px;
+          }
+          .input-label{
+               margin: 0;
+               margin-bottom: 4px;
+               margin-top: 4px;
+               
+
+          }
+          .input-item{
+            width: 100%;
+        
+          }
+        #check{
+            margin-bottom: 18px;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body style=" background-color: lightblue;" >
+    <div id="grid">
+
+        <div class="grid-items" >1</div>
+        <div class="grid-items" >2</div>
+        <div class="grid-items" >3</div>
+        <div class="grid-items" >4</div>
+        <div class="grid-items" >5</div>
+        <div class="grid-items" >6</div>
+        <div class="grid-items" >7</div>
+        <div class="grid-items" >8</div> 
+
+    </div>
+    <form id="form" method="get" >
+    <div>
+       <h1>sign up </h1>
+    </div>
+    <div>
+        <p class="input-label">full-name: </p> <br>
+        <input class="input-item" type="text" name="full-name" placeholder="full-name" autofocus required>
+    </div>
+    <div>
+        <p class="input-lable" > email: </p> <br>
+      <input class="input-item" type="email" name="email"  placeholder="Email" required >   
+    </div>
+    <div>
+        <p class="input-label">
+            age
+        </p>
+     <input class="input-item" type="number" name="age" min="10" max="60">
+    </div>
+    <div>
+      <p class="input-lable" >  password:</p> <br>
+        <input class="input-item" type="password" name="password" required maxlength="8">
+    </div>
+    <div>
+       <p class="input-lable" > confirm password: </p> <br>
+        <input class="input-item"  type="password" name="confirm-password" required maxlength="8" > 
+    </div>
+    <p class="input-lable" >Gender: </p> <br>
+
+    <div>
+        <input  type="radio" name="male" value="male" >
+         male 
+    </input>
+    </div>
+    <div>
+        
+        <input  type="radio" name="female" value="female" >
+          female
+    </input>
+    </div>
+    <div>
+        
+        <input type="radio" >
+          other
+    </input>
+    </div>
+    <div>
+       <p class="input-lable" > security questions:</p>  
+      </div>
+    <div>
+        <select name="security-question" multiple >
+            <option value="security-question"> what is the name of the school you studied</option>
+            <option value="security-question"> what is your phone number</option>
+            <option value="security-question"> what is your mothers name</option>
+
+        </select>
+    </div>
+    <div>
+        <textarea class="input-item" name="text-area"  cols="30" rows="10" required></textarea>
+    </div>
+<div>
+    <input id="check" type="checkbox" name="check-box" value="accept" >
+    i agree to terrms and conditions 
+</div>    
+<div>
+    <input type="submit" name="submit" value="register" >
+</div> 
+</form>
+</body>
+</html>
