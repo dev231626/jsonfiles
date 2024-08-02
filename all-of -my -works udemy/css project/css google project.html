@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my google project</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 0 16px;
+        } 
+
+        .menu-item {
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.8);
+            text-decoration: none;
+            position: relative;
+            top: -16px;
+            margin-right: 16px;
+        }
+
+        .menu-item:hover {
+            text-decoration: underline;
+
+        }
+
+        img {
+            width: 48px;
+            height: 48px;
+            border-radius: 17px;
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        .material-icons{
+            position: relative;
+            top: -10px;
+            margin-right: 16px;
+        }
+
+        section {
+            text-align: center;
+            padding-top: 11%;
+        }
+
+        input {
+            width: 100%;
+            color: #222;
+            border: 1px solid #dfe1e5;
+            font-size: 13px;
+            padding: 14px;
+            border-radius: 24px;
+            outline: none;
+            font-size: large;
+
+        }
+
+        input:hover {
+            box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+            border-color: rgba(223, 225, 229, 0);
+        }
+
+        #search-wrapper {
+            position: relative;
+            width: 582px;
+            display: inline-block;
+        }
+
+        .voice-icon {
+            position: absolute;
+            right: 0;
+            top: 9px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .buttons {
+            margin-top: 29px;
+            margin-right: 16px;
+            background-color: #f2f2f2;
+            color: #5F6368;
+            font-size: 14px;
+            height: 36px;
+            padding: 0 16px;
+            background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+            border: 1px solid transparent;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+            color: #222;
+        }
+        .buttons:hover{
+            background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+            border: 1px solid #c6c6c6;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            color: #222;
+        }
+        .buttons:first-of-type{
+            margin-right: 16px;
+        }
+.app-drop-down{
+    width: 285px;
+    padding: 28px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 100px;
+    display: none;
+    z-index: 10;
+}
+#drop-down-wrapper:hover .app-drop-down {
+        display: block;
+}
+.app-item{
+    display: inline-block;
+    width: 80px;
+    padding: 6px 1px ;
+    text-align: center;
+}
+.app-item > img{
+    width: 50px;
+    height: 50px;
+}
+.app-item > p{
+    color: rgba(0, 0, 0, 0.87);
+    margin: 
+    0;
+    padding-top: 8px;
+}
+
+#drop-down-wrapper{
+    display: inline-block;
+}
+
+
+.app-item:hover{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+
+.app-drop-down{
+width: 285px;
+padding: 28px;
+border: 1px solid #ccc;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 2)
+
+}
+.app-item{
+    display: inline-block;
+    width: 84px;
+}
+.app-item > img{
+    width: 50px;
+    height: 50px;
+}
+.voice-wrapper{
+     
+    background-color: #ccc;
+    border-left: 1px solid gray;
+}
+
+    </style>
+   <link
+   href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="menu-item" href="/">Gmail</a>
+            <a class="menu-item" href="">Images</a>
+            <div id="drop-down-wrapper">
+
+            <i style="position: relative;
+            top: -10px;
+            margin-right: 16px; cursor: pointer;" id="dropdown-menu" class="material-icons">apps</i>
+            <div class="app-drop-down">
+                <div class="app-item1">
+                   <img src="http://pluspng.com/img-png/google-logo-png-open-2000.png" alt="">
+                   <p>search</p>
+                </div>
+                <div class="app-item" >
+                   <img src="http://pluspng.com/img-png/google-maps-png-google-maps-icon-1600.png" alt="">
+                   <p>Maps</p>
+                </div>
+                <div class="app-item" >
+                   <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" alt="">
+                   <p>Drive</p>
+                </div>
+                <div class="app-item" >
+                   <img src="https://img.icons8.com/?size=48&id=WKF3bm1munsk&format=png" alt="">
+                   <p>Calandar</p>
+                </div>
+                <div class="app-item" >
+                   <img src="https://blogs.acu.edu/innovation_foundry/files/2017/06/google_photos1600.png" alt="">
+                   <p>Photos</p>
+                </div>
+                <div class="app-item" >
+                   <img src="https://i.pinimg.com/originals/09/96/92/099692d1d651d51b7caf3040fce0f748.png" alt="">
+                   <p>Keep</p>
+                </div>
+               </div>   
+               </div>
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJNFi9v9xz21bRjjWzxIyiLOq86zUgKnAqSCgQdgII30nm38PL0=s288-c-no"
+                alt="">
+                
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img style="padding-left: 47px; width: 300px;" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                alt="googlelogo">
+            <br>
+            <div id="search-wrapper">
+                <input />
+                <div class="voice-wrapper" > 
+                <img class="voice-icon"
+                    src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"
+                    alt="voicesearchicon">
+                </div>
+            </div>
+            <br>
+            <button class="buttons">Google Search</button>
+            <button class="buttons"> I'm Feeling Lucky </button>
+            
+        
+        </section>
+    </main>
+
+
+</body>
+<!-- 
+}
+
+    
+} -->
+
+</html>
