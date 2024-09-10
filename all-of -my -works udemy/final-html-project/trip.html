@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my trip to switzer-land</title>
+    <style>
+        body{
+    margin: 0;
+    background-color: #f2f6ff;
+}
+/* header */
+header{
+    background-color:darkblue;
+    padding: 24px;
+    padding-bottom: 2px;
+
+}
+ul, li,  .link:hover{
+    opacity: 1;
+    
+}
+ul, li,  .link{
+    color: white;
+    display: flex;
+    /* i dont understand this */
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    /*  i dont understand this */
+    justify-content: center;
+    
+}
+
+a, .link{
+    
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-left: 6px;
+    padding-right: 7px;
+    text-decoration: none;
+    font-size: large;
+    opacity: 0.8;
+    
+}
+
+.header-wrapper{
+    font-weight: 100;
+    justify-content: center;
+}
+.my-trip{
+    width: 100%;
+    height: auto;
+}
+.p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+#home:hover{
+   background-color: aqua;    
+}
+/* font word and letter style */
+p{
+    letter-spacing: 2px;
+    word-spacing: 4pxpx;
+     line-height: 1.5;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+}
+h1{
+    text-transform: capitalize;
+    letter-spacing: 4px;
+}
+/* font word and letter style */
+
+/* border style */
+#p2{
+    border: 1px solid red;
+    border-width: 6px;
+    border-radius: 55px;
+    border-top: 4px  solid blue;
+    border-right: 4px solid violet ;
+    border-left: 4px solid maroon;
+    border-bottom: 4px solid red;
+}
+#p1{
+    border: 1px solid blue;
+    border-width: 6px;
+    border-radius: 88px;
+    border-top: 4px solid gray;
+    border-bottom: 4px solid green;
+    border-left: 6px solid purple;
+}
+#p3{
+    border: 1px solid red;
+    border-top: 4px solid yellow;
+    border-right: 8px solid greenyellow;
+    border-left: 4px solid silver;
+    border-bottom: 4px solid black;
+    border-radius: 88px;
+    border-width: 5px;
+}
+#p4{
+    border: 1px solid red;
+    border-width: 5px;
+    border-radius: 88px;
+    border-top: 4px solid green;
+    border-right: 4px solid gray;
+    border-left: 4px solid chocolate;
+    border-bottom: 4px solid lawngreen;
+}
+/* border style */
+/* padding and margin */
+#p2{
+    padding:16px 28px 38px 45px;
+}
+#p2{
+    margin: 48px 45px 34px 28xp;
+}
+/* padding and margin */
+
+/* button styling */
+#login{
+    background-color: lightblue;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+
+}
+#login:hover{
+color: white;
+background-color: darkblue;
+}
+#signup{
+    background-color: lightcoral;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+#dis{
+    background-color: lightblue;
+    padding: 6px 18px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+#dis:hover{
+    background-color: red;
+}
+
+/* button styling */
+/* adding and stylein icons to buttons */
+
+
+
+
+
+/* adding and stylein icons to buttons */
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="header-wrapper">
+
+            <ul>
+                <li><a class="link" href="travel.html" id="home">H</a></li>
+                <li><a class="link" id="trip" href="trip.html">
+                        Trip
+                    </a></li>
+                <li> <a class="link" id="about"  href="about.html">about </a> </li>
+                <li> <a class="link" id="contact" href="contact.html">contact </a> </li>
+            </ul>
+        </div>
+
+    </header>
+    
+    <img class="my-trip" src="../final-html-project/image/Lausanne.jfif" alt="" style="height: auto;">
+    <div>
+        <h1 style="text-align: center; font-weight: 40; ">my trip to switzerland ;- </h1>
+        <p id="p1" class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis sapiente eos pariatur accusamus aspernatur ipsam itaque, quas officia hic voluptates illum laudantium voluptatum molestiae et architecto odio corrupti sunt.</p class="p">
+        <p id="p2" class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis sapiente eos pariatur accusamus aspernatur ipsam itaque, quas officia hic voluptates illum laudantium voluptatum molestiae et architecto odio corrupti sunt.</p class="p"><p id="p3" class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis sapiente eos pariatur accusamus aspernatur ipsam itaque, quas officia hic voluptates illum laudantium voluptatum molestiae et architecto odio corrupti sunt.</p class="p"><p id="p4" class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis sapiente eos pariatur accusamus aspernatur ipsam itaque, quas officia hic voluptates illum laudantium voluptatum molestiae et architecto odio corrupti sunt.</p class="p">
+    </div>
+    <button id="login">
+        Login
+    </button>
+    <button id="signup">
+        Signup
+    </button>
+    <button id="dis">
+        disabled
+    </button>
+   
+</body>
+</html>

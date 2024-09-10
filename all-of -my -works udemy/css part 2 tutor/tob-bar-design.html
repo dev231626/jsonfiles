@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>top-bar-using-flex</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: wheat;
+        }
+      header{
+        width: 100vw;
+        height: 100vh;
+        border-bottom: 1px solid #ccc;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+       align-content: space-between;
+       align-items: center;
+      }
+      
+        .menu-item{
+            background-color: lightcoral;
+        }
+        #logo{
+            color: #0086ff;
+            font-size: 32px;
+            letter-spacing: -1px;
+            font-weight: 900;
+            font-family: sans-serif;
+            margin-right: 58px;
+            cursor: pointer;
+        }
+        .input{
+            width: 150px;
+            border-radius: 24px ;
+            padding: 9px;
+        }
+header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 24px;
+}
+.first-div{
+ display: flex;
+ align-items: center;
+
+}
+.second-div{
+    display: flex;
+    align-items: center;
+} 
+
+nav{
+   display: 
+   flex;
+   justify-content: space-between;
+}
+
+
+    </style>
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    <nav>
+<div class="first-div" >
+<p id="logo">EDYODA</p>
+<p class="menu-item">Flashbytes</p>
+<p class="menu-item">Categories</p>
+<p class="menu-item">Upload Video </p>
+</div>
+<div class="second-div">
+    <div id="search-container">
+           <input class="input" type="text">
+        </div>
+         
+           <img src="https://lh3.googleusercontent.com/a/ACg8ocJNFi9v9xz21bRjjWzxIyiLOq86zUgKnAqSCgQdgII30nm38PL0=s288-c-no" alt="">
+
+        </div>
+    </nav>
+    </header>
+</body>
+
+</html>

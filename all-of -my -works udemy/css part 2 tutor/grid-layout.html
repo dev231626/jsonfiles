@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-layout</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.883);
+        }
+        h1{
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            letter-spacing: 4px;
+            font-size: 48px;
+        }
+        #container{
+            display: grid;
+            grid-template-columns:auto auto auto auto auto;
+            grid-gap: 16px 16px;
+            /* row-gap: 32px;
+            column-gap: 48px; */
+            /* justify-content: end; */
+             
+        }
+        div > img{
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+            max-width: 400px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 8px #ccc;
+            /* animation: zoom 1s forwards infinite; */
+        }
+         div > img:hover{
+            animation: zoom 300ms forwards;
+            
+            
+        }
+        @keyframes zoom {
+            0% {
+                transform: scale(1);
+                /* makes the scale of the element same as it was */
+                
+                box-shadow: 0 2px 5px #ccc;
+                /* makes the background light to look it as zooming */
+            }
+            100% {
+               transform: scale(1.1);
+               /* transforms the scale and make it bigger than before to make it look like its zooming */
+            }
+        }
+   @media (max-width:900px){
+    #container{
+    grid-template-columns:auto auto auto ;
+}
+   }
+   @media (max-width:400px){
+    #container{
+    grid-template-columns:auto auto  ;
+       
+    }
+   }
+    </style>
+</head>
+<body>
+    <h1>MOVIES </h1>
+    <div id="container">
+      <div>
+        <img  src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+      <div>
+        <img src="../images/images-used/home/apple-tv-background.jpg" alt="">
+      </div>
+    </div>
+</body>
+</html>

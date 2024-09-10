@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-flex-items</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+             width: 100vw;
+             height:100vh;
+             padding: 32px;
+             box-sizing: border-box;
+             background-color: lightblue;
+             display: flex;
+             flex-wrap: wrap;
+             /* works for y-axis or main-axisL */
+             justify-content:center;
+            /* works for y-axisor main-axisL */
+             flex-direction: row;
+             /* align-content-works-for-cross-axis- or x-axis of the screen to move content or justify */
+             align-items: center;
+             /* align-content-works-for-cross-axis- or x-axis of the screen to move content or justify */
+             align-content: stretch;
+             
+          }
+        .item{
+            background-color: rgb(81, 37, 37);
+            margin-right: 16px;
+            margin-bottom: 16px;
+            padding: 32px;
+            font-size: 24px;
+            /* flex-grow: 1; */
+            flex-basis: 120px;
+        }
+         .item:nth-child(2){
+            background-color: bisque;
+            /* order: 1;
+            flex-grow: 0;
+            flex-shrink: 2; */
+        } 
+        .item:nth-child(even){
+            background-color: aqua;
+            align-self: center;
+        }
+        .item:nth-child(odd){
+            align-self: flex-start;
+        }
+    </style>
+</head>
+  
+<body>
+    <header>
+        <div class="item">div1</div>
+        <div class="item" > div2</div>
+        <div class="item" > div3 </div>
+        <div class="item" > div4 </div>
+        <!-- <div class="item">div1</div>
+        <div class="item" > div2</div>
+        <div class="item" > div3 </div>
+        <div class="item" > div4 </div>
+        <div class="item">div1</div>
+        <div class="item" > div2</div>
+        <div class="item" > div3 </div>
+        <div class="item" > div4 </div> -->
+    </header>
+</body>
+    
+</html>

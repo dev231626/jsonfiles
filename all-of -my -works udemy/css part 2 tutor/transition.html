@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-2</title>
+    <style>
+        div{
+            padding: 100px;
+            margin-bottom: 100px;
+            background-color: aqua;
+            position: relative;
+            justify-content: flex-start;
+            display: flex;
+            flex-direction: column;
+
+        }
+      
+       
+        div p{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .div1:hover{
+            background-color: lightcoral;
+        }
+        .div1{
+            transition-property: background-color; 
+            transition-duration: 1s;
+            transition-timing-function: ease-out, border-radius 3s ease-out ;
+
+        }
+        .div2{
+            /* transition-property: background-color;
+            transition-duration: 3000ms;
+            transition-timing-function: ease-in; */
+            position: relative;
+            transition: background-color 3s ease-in, border-radius 1s ease-in;
+            /* animation: pulse 5s ease-in infinite; */
+            
+
+        }
+        div:hover{
+            border-radius:150px ;
+        }
+        .div2:hover{
+            background-color: bisque;
+            /* animation-play-state: paused; */
+        }
+        @keyframes pulse {
+            0% { 
+                background-color: lightblue;
+                transform: rotateZ(0deg);
+            }
+            100% {   
+                 background-color: coral;
+                transform: rotateZ(3600deg);
+              transition-duration: infinite;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1" ><p class="p">div1</p></div>
+    <div class="div2" ><p class="p">div2</p></div>
+</body>
+</html>

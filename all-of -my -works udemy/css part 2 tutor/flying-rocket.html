@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flying-rocket</title>
+    <style>
+        .id{
+          padding: 100px 0;
+          margin: 0 auto;
+          background-color: aquamarine;
+          transform: scaleY(1);
+          /* transform: scaleX(0.1); */
+          position: absolute;
+          bottom: 24px;
+          left: 30vw;
+          /* animation: fly 5s  ease-in infinite
+          ; */
+        }
+        @keyframes fly {
+            0%{
+             transform: translate(-50%, 0 ); 
+            }
+            100% {
+                transform: translate(-50%, -100vh); 
+                
+            }
+          
+        }
+        @keyframes pull{
+                0%{
+                    background-color: red;
+                }
+                100%{
+                    background-color: brown;
+                }
+            }
+        .fire{
+            background-color: red;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            box-sizing: border-box;
+            width: 100%;
+            transform: scaleY(20px);
+            padding-bottom: 50px;
+            transform: background-color 3;
+            animation: pull 500ms infinite;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="id">
+      rocket
+      <div class="fire">
+
+      </div>
+    </div>
+   
+</div>
+</body>
+</html>

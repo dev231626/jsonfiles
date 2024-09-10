@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media querry</title>
+    <style>
+        .rectangle{
+            width: 100%;
+            height: 100px;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        h1{
+            text-align: center;
+        }
+        body{
+            background-color: firebrick;
+        }
+        @media (min-width: 541px){
+            body{
+                background-color: palegreen;
+            }
+        }
+        @media (min-width:721px) {
+            body{
+                background-color: aqua;
+            }
+            .rectangle-wrapper{
+                display: flex;
+
+            }
+            .rectangle-wrapper > div{
+                margin-right: 50px;
+            }
+            .rectangle{
+            width: 50%;
+            height: 100px;
+        }
+        }
+        @media (min-width:901px) {
+            body{
+                background-color: tan
+            }
+            .rectangle-wrapper > div{
+                width: 400px;
+        }
+    }
+        h1{
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>media querry</h1>
+<div class="rectangle-wrapper" >
+    <div class="rectangle blue" >
+
+    </div>
+    <div class="rectangle yellow" >
+
+    </div>
+</div>
+</body>
+</html>
