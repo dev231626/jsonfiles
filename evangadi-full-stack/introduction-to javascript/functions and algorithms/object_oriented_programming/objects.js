@@ -42,7 +42,7 @@ let neba = {
 
 // now let's see how to callan ojects inside the object 
 // and the difference bt [](square brackets) and dot . sign when calling an elements in the object.
-let myFiatCar = {
+let FiatCar = {
     name:"fiat",
     model: 500,
     weight: "850kg",
@@ -196,19 +196,82 @@ function Driver(cars, neba, mojulo,kick){
     }
 }
 
+
+
+function galory(a, b, c, d ){
+
+    this.y = a;
+    this.u = b;
+    this.i = c;
+    this.t = d;
+
+     this.start = function(){
+        return 'this is my ' + this.name
+     }
+
+
+
+}
+let yu = new galory(mercedes, )
+
+
+
+
+
+
 var example1 = "abebe"
 console.log(example1.length);
 
-
-String.prototype.charAt()
-
+// String.prototype.charAt()
 
 
 
 
 
+function neba(Carcode, Carname, Carnumber, Cardesing){
+    this.code = Carcode;
+    this.name = Carname;
+    this.number = Carnumber;
+    this.design = Cardesing;
+    
+    
+    this.code = () => 'this is my code' + this.code
+
+    this.name = () => 'this is the name' + this.name
+
+    this.number = () => 'this is the number ' + this.number
+
+    this.designName = () => 'this is the design name' + this.design
+}
 
 
+let turkishStyle = new neba('90', 'mersedes', '8090', 'intel' )
+
+
+let science = {
+    physics: name,
+}
+
+
+
+
+let myFiatCar = {
+    name : "fiat",
+    model: 500,
+    weight: "850kg",
+    color: "white",
+    "number of renches": 780,
+
+    start: function(){
+       
+    }
+}
+
+
+
+console.log(myFiatCar["number of renches"]);
+
+console.log(myFiatCar.name)
 
 
 

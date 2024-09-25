@@ -37,7 +37,7 @@ let i = (start, end) => {
 
 function score() {
     var arr = [89,76,56,43,98,58,45]
-    for(i = 0; i <= arr; i = i +1 ){
+    for(i = 0; i <= arr.length; i = i +1 ){
         if(i <= 50){
             console.log("yourscore is less");
         } else
@@ -47,7 +47,17 @@ function score() {
 
  
 
-
+function name(param) {
+    let array = [78, 67, 78, 90, 30, 20,10]
+    for(i = 0; i <= array.length; i++){
+        if(i <= 50){
+            console.log('your score is less');
+        } else{
+            console.log('your score is good');
+        }
+    }
+    
+}
 
 
 
