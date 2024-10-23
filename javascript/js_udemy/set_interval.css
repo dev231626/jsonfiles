@@ -1,0 +1,66 @@
+
+#body{
+    width: 100%;
+    margin: 0;
+
+}
+#countdiv{
+    width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+/* background-color: khaki; */
+}
+.decreasing_val{
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-image: linear-gradient(purple, green);
+}
+#countdown{
+  
+    margin: 0 auto;
+    font-size: 100px;
+    position: fixed;
+    transform: translateX(50vw);
+}
+ 
+@keyframes change{
+
+from{
+    background-image:linear-gradient(purple, blue) ;
+}
+
+to{
+    background-image:linear-gradient(purple, blue );
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

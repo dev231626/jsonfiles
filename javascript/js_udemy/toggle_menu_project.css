@@ -1,0 +1,67 @@
+
+body{
+    background-color: whitesmoke;
+}
+
+
+
+#sidebar{
+
+
+    /* transition: all 1s; */
+    width: 100%;
+    height: 100%;
+    max-width: 270px;
+    background-color: white;
+    position: fixed;
+    left: -270px;
+    top: 72px;
+    
+}
+
+
+#sidebar ul{
+
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 32px;
+    
+} 
+
+ #sidebar ul li {
+    padding-left: 0;
+    font-size: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+#sidebar ul li:hover{
+    width: 80%;
+    background-color: blue;
+    box-shadow: 2px 3px 4px gray;
+    cursor: pointer;
+}
+
+
+.hide{
+    display: none;
+    transform: translateX(-270PX);
+    transition: ease-out 1s;
+    
+}
+
+.show{
+    display: block;
+    transform: translateX(270px);
+    transition: ease-in 1s;
+    
+}
+
+
+
+
+
+
+

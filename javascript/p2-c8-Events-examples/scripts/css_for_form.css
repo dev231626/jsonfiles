@@ -1,0 +1,99 @@
+
+body{
+    background-color: orange;
+}
+input:nth-of-type(1){
+border-radius: 5px;
+outline: none;
+border: 1px solid green;
+
+border-width: 13px;
+box-sizing: border-box;
+padding: 7px;
+}
+input:nth-of-type(2){
+border-radius: 5px;
+outline: none;
+border: 1px solid yellow;
+
+border-width: 13px;
+box-sizing: border-box;
+padding: 7px;
+}
+input:nth-of-type(3){
+border-radius: 5px;
+outline: none;
+border: 1px solid red;
+
+border-width: 13px;
+/* box-sizing: border-box; */
+padding: 7px;
+}
+
+
+.form_div{
+    display: flex;
+    flex-direction: column;
+    /* width: 300px; */
+
+}
+p{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+button{
+
+    width: 100px;
+    margin:0 auto;
+    margin-top: 30px;
+    
+}
+
+input::placeholder{
+
+    font-weight: 700;
+    transform: translateX(50%);
+    position: absolute;
+    right: 50%;
+}
+
+#display_error{
+    /* position: absolute;
+    left: 50%;
+   transform: translateX(-50%); */
+   background-color: red;
+   border-radius: 3px;
+   text-align: center;
+   
+   animation: call 0.5s  infinite;
+}
+
+
+@keyframes call {
+
+    from{
+        transform: 
+        scaleY(1);
+    }
+to{
+    transform: scaleY(1.1);
+   box-shadow: 2px 3px 10px black;
+
+}
+}
+
+
