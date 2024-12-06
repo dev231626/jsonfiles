@@ -1,45 +1,107 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mouse_event</title>
-<style>
+    <style>
+        button {
+            position: relative;
+            margin-bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 4px;
+            width: 150px;
+            height: 49px;
+            top: 23px;
+            border-radius: 14px;
 
+        }
 
-    button{
-        position: absolute;
-        left: 50%;        
-        transform: translateX(-50%);
-        padding: 4px;
-        width: 150px;
-        height: 49px;
-        top: 23px;
-        border-radius: 14px;
+        button:hover {
 
-    }
-    button:hover{
-    
-      box-shadow: 2px 3px 10px 4px red;
-      
-    }
-    
-    
-    
-</style>
+            box-shadow: 2px 3px 10px 4px red;
+
+        }
+        
+
+        
+        .flex{
+            display: flex ;
+            flex-direction: row;
+           
+        }
+        .firstdiv, .seconddiv, .thirddiv{
+            background-color: rgb(243, 156, 116);
+            margin: 0 auto;
+            margin-right: 30px;
+            height: 250px;
+        }
+        
+       .mousevent{
+        background-color: lightblue;
+       }
+
+       .counter{
+
+        background-color: rgb(119, 102, 83)
+        
+       }
+        .mousevent h1, .counter {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
 
-    
-    
-    <button id="top-btn" >
+
+
+    <button id="top-btn">
         click me !!
     </button>
-    
-    
-    <script src="mouseEvents.js" ></script>
-</body>
-</html>
 
+
+<div class="flex" >
+    <div class = "firstdiv" >
+        <div class="mousevent" id="over">
+            <h1>mouseover
+                event triggered:
+            </h1>
+        </div>
+        <div class="counter" id="counter" >
+            <h3>0</h3>
+        </div>
+    </div>
+    <div class = "seconddiv" >
+        <div class="mousevent" id="enter">
+            <h1>mouseenter
+                event triggered:
+            </h1>
+        </div>
+        <div class="counter">
+            <h3 id="h3_2">0</h3>
+        </div>
+    </div>
+    <div class = "thirddiv" >
+        <div class="mousevent" id="move">
+            <h1>mousemove
+                event triggered:
+            </h1>
+        </div>
+        <div class="counter" id="h3_3">
+            <h3>0</h3>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+    <script src="mouseEvents.js"></script>
+</body>
+
+</html>

@@ -1,86 +1,90 @@
 
-// ?mouse events 
+
+
+
 
 var btn = document.getElementById("top-btn")
 
+
 btn.addEventListener("mousedown", function(){
 
-    console.log("mouse down event");
-    
+    console.log('mouse down event');
     
     
 })
+
+
+var btn = document.getElementById("top-btn")
+
+
 btn.addEventListener("mouseup", function(){
 
-    console.log("mouse up event");
-    
+    console.log('mouse up');
     
     
 })
+
+
+var btn = document.getElementById("top-btn")
+
+
 btn.addEventListener("click", function(){
 
-    console.log("mouse click event");
+    console.log('click event');
+       document.body.style.backgroundColor = ""
     
-    
+})
+var btn = document.getElementById("top-btn")
+
+
+btn.addEventListener("dblclick", function(){
+
+    console.log('double click');
+    document.body.style.backgroundColor = "blue"
     
 })
 
 
 
-var over = document.getElementById('over')
-
+var over = document.getElementById("over" )
 var overCount = 0
+over.addEventListener("mouseover", function(){
 
-over.addEventListener('mouseover', function(){
-
-    var countElement = document.querySelector('#over > p')
+    console.log('mouse overed');
     
-    overCount += 1
-    
-    countElement.innerHTML = overCount;
+    var count = document.querySelector(".counter > h3")
+     overCount += 1
+    count.innerHTML = overCount;
     
     
 })
 
-var enter = document.getElementById('enter')
 
 
-var enterCount = 0;
+var enter = document.getElementById("enter")
+var overCount = 0
+enter.addEventListener("mouseenter", function(){
 
-enter.addEventListener('mouseenter', function(){
+    var countel = document.querySelector("#h3_2") 
 
-    var countElement = document.querrySelector('#enter > p')
+    overCount += 1
+    countel.innerHTML = overCount
+    console.log("mouse entered");
     
-    enterCount += 1
-
-    countElement.innerHTML = enterCount;
-    
-
 })
 
 var move = document.getElementById("move")
 
+var count = 0
 
-var moveCount = 0;
+move.addEventListener("mousemove", function(){
 
-move.addEventListener('mousemove', function(){
+    var countelement = document.querySelector("#h3_3")
+    
+    count += 1
 
-    var moveElement = document.querrySelector("#move > p")
-    
-    moveCount += 1 
-    
-    moveElement.innerHTML = moveCount;
-    
-    
-    
-    
-    
-    
+    countelement.innerHTML = count
 })
-
-
-
-
 
 
 
