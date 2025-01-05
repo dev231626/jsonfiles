@@ -19,15 +19,39 @@
           },
           {
             "key": 1735137853729,
-            "children": [],
+            "children": [
+              {
+                "key": 1735814760661,
+                "children": [],
+                "todo": {
+                  "content": "",
+                  "id": 1735814760661,
+                  "level": "default",
+                  "done": false,
+                  "start": 1735814760661
+                }
+              }
+            ],
             "todo": {
               "content": "understand about browser object model",
               "id": 1735137853729,
               "level": "default",
               "done": false,
               "start": 1735137853729,
-              "focus": true,
+              "focus": false,
               "tags": []
+            }
+          },
+          {
+            "key": 1735814768618,
+            "children": [],
+            "todo": {
+              "content": "start project about calculator app and understand its logic",
+              "id": 1735814768618,
+              "level": "default",
+              "done": false,
+              "start": 1735814768618,
+              "focus": true
             }
           }
         ],
@@ -41,8 +65,7 @@
       }
     ],
     "expandKeys": [
-      1734428282364,
-      1735137853729
+      1734428282364
     ],
     "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
     "add_mode": "bottom",
@@ -55,6 +78,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1735137916251"
+    "version": "1735814914844"
   }
 }

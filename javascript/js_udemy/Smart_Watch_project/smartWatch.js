@@ -65,13 +65,15 @@ console.log(watch_color.offsetWidth);
 
 // time button funtion
 
-let countdown
+let countdown;
+
 timeButton.addEventListener('click', () => {
 
       // Stop any existing countdown
     if (countdown) {
         clearInterval(countdown);
-    }
+    }   // this will help with stoping the countdown if it has been previously executed and prevent from ovelapping 
+    
     
     heartSection.classList.add('hidden');
     timeDisplay.classList.remove('hidden');

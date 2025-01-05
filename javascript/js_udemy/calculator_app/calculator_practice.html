@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+
+
+
+    <main id="main">
+        <form action="" id="calc_form">
+            <header class="calc_header"> 
+                
+                <input type="text" disabled name="" id="output" class="calc_output" value="0" readonly>
+
+            </header>
+            <button  onclick="appendToDisplay('7')"  type="button" class="calc_button" value="7">7</button>
+            <button  onclick="appendToDisplay('8')"  type="button" class="calc_button" value="8">8</button>
+            <button  onclick="appendToDisplay('9')"  type="button" class="calc_button" value="9">9</button>
+            <button  onclick="appendToDisplay('/')"  type="button" class="calc_button" value="/">/</button>
+            <button  onclick="appendToDisplay('4')"  type="button" class="calc_button" value="4">4</button>
+            <button  onclick="appendToDisplay('5')"  type="button" class="calc_button" value="5">5</button>
+            <button  onclick="appendToDisplay('6')"  type="button" class="calc_button" value="6">6</button>
+            <button  onclick="appendToDisplay('*')"  type="button" class="calc_button" value="*">*</button>
+            <button  onclick="appendToDisplay('1')"  type="button" class="calc_button" value="1">1</button>
+            <button  onclick="appendToDisplay('2')"  type="button" class="calc_button" value="2">2</button>
+            <button  onclick="appendToDisplay('3')"  type="button" class="calc_button" value="3">3</button>
+            <button  onclick="appendToDisplay('-')"  type="button" class="calc_button" value="-">-</button>
+            <button  onclick="appendToDisplay('0')"  type="button" class="calc_button" value="0">0</button>
+            <button  onclick="appendToDisplay('.')"  type="button" class="calc_button" value=".">.</button>
+            <button  onclick="appendToDisplay('+')"  type="button" class="calc_button" value="+">+</button>
+            <button  onclick="calculate()"  type="button" class="calc_button" id="equal">=</button>
+            <button  onclick="clearDisplay()"  type="button" class="calc_button" id="clear">C</button>
+        </form>
+    </main>
+
+    
+
+        
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>

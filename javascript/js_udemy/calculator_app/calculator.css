@@ -1,0 +1,91 @@
+
+
+/* make the body style contents to be centered, white color, radius,  */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Source Sans 3', sans-serif;
+    background-image: url('./mSPU63U - Imgur.jpg');
+}
+
+
+
+
+
+#main{
+
+    
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px;    
+    /* set border radius and box shadow with rgba */
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+#output{
+
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    text-align: end;
+    font-size: 2em;
+    box-sizing: border-box;
+
+    
+    
+}
+
+.calc_button{
+    width: 23%;
+    height: 50px;
+    margin: 1%;
+    font-size: 1.5em;
+    border-style: none;
+
+}
+.calc_button:hover{
+    background-color: rgb(197, 190, 190);
+    cursor: pointer;
+}
+
+#clear{
+    background-color: rgb(115, 115, 209);
+}
+#clear:hover{
+    background-color: red;
+}
+#equal{
+    background-color: #66ff66;
+}
+/* #equal:hover{
+    animation: neba  linear forwards;
+} */
+
+/* 
+@keyframes neba{
+    from{
+    transform: scaleZ(1);
+
+    }
+    
+
+    
+    
+    to{
+            transform: scaleZ(2);
+            background-color:#fff;
+            border-style: solid;
+            box-shadow: 0px 0px 10px;
+    
+}
+        
+    
+    
+} */
+
+
