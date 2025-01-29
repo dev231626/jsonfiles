@@ -24,8 +24,26 @@ function hidden(givenString){
 console.log(hidden("BJBJBJhNJNJKiJFUR"));
 
 
+function hidden(givenString){
+
+    let givenArrays = givenString.split()
+
+    let smallWord = givenArrays.filter(
+        
+        (singleLetter) => singleLetter != singleLetter.toUpperCase()
 
 
+        
+    )
+    
+    let collection = smallWord.join('')
+    return collection
+    
+
+    
+}
+
+console.log(hidden('nHFKDHFJeKAJFJGHbFHFJFHa'));
 
 
 
@@ -190,6 +208,53 @@ function math(arr1, arr2){
     }
 
 }
+
+
+
+
+
+
+
+
+
+// find hidden word lower from upper and lower cases
+
+function hidden(givenString){
+
+    console.log("letter", givenString);
+    
+    // write for loop that collects the every string and adds it to container
+    var hiddenWordContainer = ""
+
+    for (let i = 0; i < givenString.length; i++) {
+        // add single letters to vat
+        var singleLetter = givenString.charAt(i)
+        console.log("single letters", singleLetter);
+        
+    }
+    
+
+    if (singleLetter === singleLetter.toLowerCase()) {
+
+            hiddenWordContainer = hiddenWordContainer + singleLetter        
+        
+            console.log('storage', hiddenWordContainer);
+            
+    }
+    
+    return hiddenWordContainer
+    
+    
+    
+}
+
+
+console.log(hidden("BJBJBJhNJNJKiJFUR"));
+
+
+
+
+
 
 
 
