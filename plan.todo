@@ -36,17 +36,32 @@
               "content": "understand about browser object model",
               "id": 1735137853729,
               "level": "default",
-              "done": false,
+              "done": true,
               "start": 1735137853729,
               "focus": false,
-              "tags": []
+              "tags": [],
+              "end": 1739137343375
             }
           },
           {
             "key": 1735814768618,
-            "children": [],
+            "children": [
+              {
+                "key": 1739137359046,
+                "children": [],
+                "todo": {
+                  "content": "finish snake game project in three days",
+                  "id": 1739137359046,
+                  "level": "default",
+                  "done": false,
+                  "start": 1739137359046,
+                  "focus": true,
+                  "date": "1739139200,1739312010"
+                }
+              }
+            ],
             "todo": {
-              "content": "start project about calculator app and understand its logic",
+              "content": "start project about calculator app and snake game understand its logic to build by your self",
               "id": 1735814768618,
               "level": "default",
               "done": false,
@@ -65,7 +80,8 @@
       }
     ],
     "expandKeys": [
-      1734428282364
+      1734428282364,
+      1735814768618
     ],
     "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
     "add_mode": "bottom",
@@ -78,6 +94,6 @@
     "showEndTime": false,
     "simpleMode": false,
     "lang": "en",
-    "version": "1735814914844"
+    "version": "1739137431372"
   }
 }
