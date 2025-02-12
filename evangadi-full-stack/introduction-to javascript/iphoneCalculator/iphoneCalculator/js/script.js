@@ -1,5 +1,6 @@
 console.log(window.outerHeight);
 
+// 1. Select all necessary elements (buttons, display, etc.) from the DOM
 const hourEl = document.querySelector('.hour');
 const minuteEl = document.querySelector('.minute');
 const valueEl = document.querySelector('.value');
@@ -31,10 +32,15 @@ const numberElArray = [
     number0EL, number1EL, number2EL, number3EL, number4EL, number5EL, number6EL, number7EL, number8EL, number9EL
 ]
 
-// variables
+// 2. Initialize variables to store values and operators
 let valueStrInMemory = null;
 let operatorInMemory = null;
 
+// 3. Create functions to handle:
+//    a. Number button clicks
+//    b. Operator button clicks
+//    c. Special buttons (AC, PM, %, etc.)
+//    d. Updating the display
 
 // functions
 const getvalueAsStr = () => {
@@ -78,6 +84,8 @@ const handleNumberClick = (numstr) => {
 }
 }
 
+
+
 const getResultofOperationAsStr = () => {
 
     const currentValueNum = getValueAsNum();
@@ -120,7 +128,7 @@ const handleOperatorClick = (operation) => {
     setStrAsValue('0');
 }
 
-// Add Event to functions 
+// 4. Add event listeners to all buttons to call the appropriate functions
 
 acEl.addEventListener('click', () => {
     setStrAsValue('0');
