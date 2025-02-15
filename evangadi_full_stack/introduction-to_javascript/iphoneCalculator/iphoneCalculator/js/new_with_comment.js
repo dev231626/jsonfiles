@@ -329,7 +329,7 @@ divisionEl.addEventListener("click", () => {
                 setStrAsValue(getResultofOperationAsStr)
             }
             valueStrInMemory = null
-
+            
             operatorInMemory = null
 
         })
