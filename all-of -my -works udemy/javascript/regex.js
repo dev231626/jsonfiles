@@ -1,5 +1,5 @@
 // meta characters sets and ranges 
-syntax: /pattern/{flags}
+// syntax: /pattern/{flags}
 // the inbuilt Regular Expression class.
 synatx: var reg = new RegExp("pattern", "flags")
 // ranges
@@ -68,7 +68,7 @@ console.log(str.match(pattern)) // [ 'pen', index: 10, input: 'This is a black p
 
 // // trying with the global flag
 var str = "This is a black pen. this pen is really amazing";
-var pattern = /pen/ g
+var pattern = /pen/g
 console.log(str.match(pattern)) // [ 'pen', 'pen' ] // this will return all the occurrences of the pattern in an array.
 
 
@@ -83,7 +83,7 @@ console.log(str.match(pattern)) // [ 'pen', 'pen', 'Pen' ] // this will return a
 
 var pattern = /./gi // this will return all the characters in the string [ 'T', 'h', 'i', 's', ' ', 'i', 's', ' ', 'a', ' ', 'b', 'l', 'a', 'c', 'k', ' ', 'p', 'e', 'n', '.', ' ', 't', 'h', 'i', 's', ' ', 'p', 'e', 'n', ' ', 'i', 's', ' ', 'r', 'e', 'a', 'l', 'l', 'y', ' ', 'a', 'm', 'a', 'z', 'i', 'n', 'g', ' ', 'P', 'e', 'n' ]
 
-var pattern = /./i // this will return only the first character in the string [ 'T' ] . sign means any character(symbol, num, alpha, space) except new line.
+var pattern = /./i // case insensetive // this will return only the first character in the string [ 'T' ] . sign means any character(symbol, num, alpha, space) except new line.
 
 // the difference between .exec() and .match() is that .exec() returns an array of the first occurrence of the pattern and .match() returns an array of all the occurrences of the pattern.
 
@@ -104,12 +104,30 @@ If no match is found, it returns null.`
 
 
 
+// var str = "9988776655"
+// var str = "919988776655" // if we add 91 at the beggining its called optional then the console we log null becuase its added after the all process ended 
+var str = "+919988776655" // if we add 91 at the beggining its called optional then the console we log null becuase its added after the all process ended 
 
 
 
+// var pattern = /^[\d] {10}$/g // this will check for only digit numbers at first position and continiues to the last until it finds 10 length digits. and searches global which is goes/checks through all the string given 
+var pattern = /^ (\+91) [\d] {10}$/g // here (\+91) indicates that its an optional string and the \(back-slash) indicates that the + (plus sign is not an quantifier its a string) should be treated as a string
+
+console.log(str.match(pattern));
 
 
+var str = "www.google.com"
 
+var pattern = /^www\.[\w]+.(com|co|in)$/g // this (com|co|in)$/g indicates that match one of com , co, in at the end of the string and () is used to compare only the last part of the string if written like /^www\.[\w]+.com|co|in$/g with no brackets   it will compare in with the remaining string and will return the in as the output. if present in string
+
+console.log(str.match(pattern));
+
+
+// creating a valid user name for a form 
+
+var str = "user_name"
+
+var pattern = /^[\w]{6,8}$/
 
 
 
