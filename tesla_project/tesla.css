@@ -60,6 +60,49 @@ header a{
     z-index: 5;
 }
 
+.mdl a:nth-child(6){
+
+    padding-right: 180px;
+}
+
+
+.hover{
+    background-color: rgba(128, 128, 128, 0.15);
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.7s ;
+    border-radius: 10px;
+    height: 30px;
+    display: inline-block;
+}
+
+.mdl a:nth-child(1):hover~.hover{
+
+    opacity: 1;
+    left: 0;
+    width: 85px;
+    
+}
+
+.mdl a:nth-child(2):hover~.hover{
+
+    opacity: 1;
+    left: 90px;
+    width: 80px;
+
+
+}
+.mdl a:nth-child(3):hover~.hover{
+
+    opacity: 1;
+    left: 175px;
+    width: 85px;
+}
+
+
+
+
 
 
 
