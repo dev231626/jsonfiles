@@ -45,7 +45,7 @@ header a{
     border-radius: 10px;
     cursor: pointer;
     font-weight: 600;
-    color:black
+    color: rgb(34, 34, 34);
     
 }
 
@@ -79,7 +79,7 @@ header a{
 
 .mdl a:nth-child(1):hover~.hover{
 
-    opacity: 1;
+    opacity: 3;
     left: 0;
     width: 85px;
     
@@ -87,7 +87,7 @@ header a{
 
 .mdl a:nth-child(2):hover~.hover{
 
-    opacity: 1;
+    opacity: 3;
     left: 90px;
     width: 80px;
 
@@ -95,7 +95,7 @@ header a{
 }
 .mdl a:nth-child(3):hover~.hover{
 
-    opacity: 1;
+    opacity: 3;
     left: 175px;
     width: 85px;
 }
